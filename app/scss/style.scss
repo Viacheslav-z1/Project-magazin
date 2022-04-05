@@ -4,11 +4,200 @@
 @import 'global';
 
 
+.header{
+  padding: 50px 0;
+  &__inner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  }
+}
 
+.menu{
 
+  &__list{
+  display: flex;
+  }
+  &__item{
+  border-bottom: 1px solid transparent;
+  transition: all cubic-bezier(1, 0.7, 0, 0.9) .4s;
+  }
+  &__item:hover{
+  border-bottom: 1px solid #243f4d;
+  }
+  &__item + &__item{
+  margin-left: 30px;
+  }
+  &__link{
+  color: #436372;
+  @extend %rubik-500;
+  font-size: 15px;
+  }
+}
 
+.user-nav{
+  display: flex;
+  &__seach,
+  &__button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #edf1f4;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  }
+  &__info{
+  display: flex;
+  margin: 0 20px;
+  background-color: #fcd7b6;
+  align-items: center;
+  border-radius: 25px;
+  position: relative;
+  }
+  &__info::after{
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 32px;
+  top: 20%;
+  right: 50%;
+  background-color: #fde7d3;
+  }
+  &__likes{
+  padding: 10px 15px 10px 40px;
+  margin-right: 15px;
+  position: relative;
+  }
+  &__basket{
+  padding: 10px 40px 10px 15px;
+  margin-left: 15px;
+  position: relative;
+  }
+  &__basket__num,
+  &__likes__num{
+  position: absolute;
+  height: 16px;
+  width: 16px;
+  font-size: 10px;
+  line-height: 16px;
+  background-color: #fff;
+  right: 32px;
+  top: 2px;
+  text-align: center;
+  border-radius: 50%;
+  @extend %dm-700;
+  }
+  &__likes__num {
+  top: 2px;
+  right: 6px;
+  }
+  &__button{
+  background-color: #a3bbc8;
+  }
+}
 
-
+.footer{
+  
+  &__top{
+   display: flex;
+   justify-content: space-between;
+   padding-bottom: 55px;
+   border-bottom: 1px solid #dae4e9;
+  }
+  &__item{
+  margin: 0 10px;
+  }
+  &__info{
+    width: 210px;
+  }
+  &__title{
+    text-transform: uppercase;
+    color: #1f2044;
+    line-height: 21px;
+    margin-bottom: 30px;
+    @extend %dm-700;
+  }
+  &__logo{
+    margin-bottom: 25px;
+    display: inline-block;
+  }
+  &__adres,
+  &__phone,
+  &__mail{
+    text-transform: uppercase;
+    margin-bottom: 5px;
+  }
+  &__adres-link{
+    text-transform: capitalize;
+    @extend %rubik-400;
+  }
+  &__mail-link{
+    text-transform: lowercase;
+     @extend %rubik-400;
+  }
+  &__services-link,
+  &__account-link{
+    @extend %rubik-400;
+  }
+  &__services{
+    width: 150px;
+  }
+  &__services-item,
+  &__account-item{
+    margin-bottom: 9px;
+  }
+  &__form{
+    max-width: 275px;
+  }
+  &__form-text{
+    line-height: 24px;
+    margin-bottom: 30px;
+    @extend %rubik-400;
+  }
+  &__form-input{
+    padding: 12px;
+    border: none;
+    background-color: #fef7f0;
+    max-width: 170px;
+    width: 100%;
+  }
+  &__form-input::placeholder{
+    font-size: 12px;
+    color: #234969;
+    @extend %dm-400;
+  }
+  &__form-btn{
+    background-color: #a3bbc8;
+    border: none;
+    color: #fff;
+    padding: 12px 13px;
+    cursor: pointer;
+    @extend %dm-400;
+    margin-left: -3px;
+  }
+  &__services,
+  &__form,
+  &__account{
+    margin-top: 16px;
+  }
+  &__bottom{
+    display: flex;
+    justify-content: space-between;
+    padding: 35px 0;
+  }
+  &__menu-list{
+  display: flex;
+  }
+  &__menu-item + &__menu-item{
+    margin-left: 10px;
+  }
+  &__menu-link,
+  &__licenzion{
+    @extend %rubik-400;
+    font-size: 14px;
+  }
+}
 
 
 @import 'media';

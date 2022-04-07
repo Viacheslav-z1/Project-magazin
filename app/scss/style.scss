@@ -298,10 +298,18 @@
   &__inner{
     display: flex;
     justify-content: space-around;
+    min-height: 170px;
+    align-items: center;
   }
   &__item{
     display: flex;
-    max-width: 270px;
+    justify-content: center;
+    max-width: 600px;
+    width: 100%;
+    padding: 0 10px;
+  }
+  &__item--borders{
+    position: relative;
   }
   &__img{
   }
@@ -325,7 +333,7 @@
   }
   &__img-box::after{
       right: -7px;
-      top: 19px;
+      top: 28px;
       }
   &__img-box--two::after{
     right: -6px;
@@ -333,7 +341,7 @@
     }
   &__img-box--three::after{
     right: -6px;
-    top: 21px;
+    top: 29px;
     }
   &__title{
    @extend %dm-700;
@@ -344,7 +352,20 @@
   }
 
 }
+.video-popup{
+   background-image: url('../images/play_bg.jpg');
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 500px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  &__btn{
+  }
+  &__img{
 
+  }
+}
 @import 'media';
-
 

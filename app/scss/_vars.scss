@@ -27,9 +27,3 @@ $accent: #585858;
   font-weight: 700;
 }
 
-@function max($numbers...) {
-  @return m#{a}x(#{$numbers});
-}
-@function min($numbers...) {
-  @return m#{i}n(#{$numbers});
-}

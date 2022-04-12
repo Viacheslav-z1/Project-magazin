@@ -36,3 +36,29 @@ a{
   margin-bottom: 35px;
   text-align: center;
 }
+
+.breadcrumbs{
+
+  &__list{
+    display: flex;
+    justify-content: center;
+  }
+  &__item + &__item{
+    padding-left: 13px;
+    margin-left: 5px;
+  }
+  &__item{
+  position: relative;
+  }
+  &__item + &__item::before{
+    content: '/';
+    position: absolute;
+    left: 0;
+  }
+  &__link{
+    font-size: 14px;
+    color: rgba(34, 41, 51, 0.6);
+    line-height: 1.714;
+    @extend %rubik-400;
+  }
+}

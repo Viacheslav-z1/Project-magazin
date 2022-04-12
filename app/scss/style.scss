@@ -566,6 +566,132 @@ padding: 100px 0 35px;
   }
 }
 
+.our{
+  padding-top: 115px;
+  position: relative;
+  padding-bottom: 20px;
+  &::after{
+    position: absolute;
+    content: '';
+    left: 0;
+    right: 0;
+    background-color: #fef7f0;
+    height: 205px;
+    z-index: 0;
+    bottom: 0;
+  }
+  &-title{
+    margin-bottom: 0;
+  }
+  &__more{
+    padding-right: 26px;
+    @extend %dm-700;
+    color: $title;
+    position: relative;
+  }
+  &__more::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 6px;
+    background-image: url('../images/nav_user_icons/arrow-right.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 7px;
+    height: 12px;
+  }
+  &__top{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 40px;
+  }
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item{
+    display: flex;
+    flex-direction: column;
+    max-width: 370px;
+    width: 100%;
+    min-height: 420px;
+    justify-content: space-between;
+    position: relative;
+    z-index: 100;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+  }
+  &__box{
+    padding: 28px;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+  }
+  &__img{
+    overflow: hidden;
+    object-fit: cover;
+    height: 250px;
+  }
+  &__img-link{
+    position: relative;
+  }
+  &__img-chek{
+   display: inline-block;
+   padding: 8px 36px;
+   background-color: #a3bbc8;
+   border-radius: 25px;
+   color: #fff;
+   position: absolute;
+   bottom: -20px;
+   left: 28px;
+   text-transform: uppercase;
+  }
+  &__text{
+    font-size: 18px;
+    color: $title;
+    display: inline-block;
+    margin-bottom: auto;
+    @extend %dm-500;
+  }
+  &__info{
+    border-top: 1px solid #e0e0e0;
+    padding-top: 10px;
+    display: flex;
+    color: #222933;
+    font-size: 12px;
+    @extend %dm-500;
+    margin-top: 20px;
+  }
+  &__data{
+   margin-right: 35px;
+  }
+  &__author{
+    @extend %dm-500;
+    color: #222933;
+  }
+}
+
+.partners {
+  &__container{
+   background-color: #fef7f0;
+  }
+  padding: 70px 0 90px;
+  &__list{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+  &__item{
+
+  }
+}
+
 
 @import 'media';
 

@@ -6,6 +6,29 @@ $(function () {
     autoplaySpeed: 3500,
     fade: true
   });
+  $('.product-cart__slides-big').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    asNavFor: '.product-cart__slides-small',
+  });
+  $('.product-cart__slides-small').slick({
+    vertical: true,
+    slidesToShow: 3,
+    arrows: false,
+    slidesToScroll: 1,
+    focusOnSelect: true,
+    asNavFor: '.product-cart__slides-big',
+  });
+  $('.product-slider__wrapper').slick({
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    prevArrow: '<button type="button" class="slick-prev"><img src="../images/product-cart/icon/arrow-left.svg" alt=""></button>',
+    nextArrow: '<button type="button" class="slick-next"><img src="../images/product-cart/icon/arrow-right.svg" alt=""></button>',
+  });
+
+  $('.product-cart__input').styler();
+ 
 
   $('.filter-price__input').ionRangeSlider({
     type: "double",
@@ -66,5 +89,8 @@ $(function () {
   };
   var mixer1 = mixitup(containerEl1, config);
   var mixer2 = mixitup(containerEl2, config);
+
+ 
+
 
 })

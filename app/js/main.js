@@ -1,4 +1,15 @@
 $(function () {
+
+  $('.product-tabs__link').on('click', function(e) {
+    e.preventDefault();
+    $('.product-tabs__link').removeClass('product-tabs__link--active');
+    $(this).addClass('product-tabs__link--active');
+
+    $('.product-tabs__item').removeClass('product-tabs__item--active');
+    $($(this).attr('href')).addClass('product-tabs__item--active');
+  });
+
+
   $('.top-slider__inner').slick({
     arrows: false,
     dots: true,

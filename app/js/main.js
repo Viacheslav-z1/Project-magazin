@@ -1,5 +1,7 @@
 $(function () {
 
+  
+
   $('.product-tabs__link').on('click', function(e) {
     e.preventDefault();
     $('.product-tabs__link').removeClass('product-tabs__link--active');

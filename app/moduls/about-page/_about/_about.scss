@@ -1,0 +1,141 @@
+.about {
+  padding: 115px 0;
+
+  &__mission {
+    padding-bottom: 115px;
+  }
+
+  &__mission-img {
+    max-width: 570px;
+    object-fit: cover;
+    margin-right: 50px;
+  }
+
+  &__mission-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__mission-content {
+    max-width: 550px;
+  }
+
+  &__mission-bigtittle {
+    font-size: 140px;
+    @extend %dm-700;
+    color: #a3bbc8;
+  }
+
+  &__mission-list {
+    display: inline-block;
+    margin-bottom: 35px;
+  }
+
+  &__mission-li {
+    color: #243f4d;
+    margin-bottom: 15px;
+    @extend %rubik-400;
+  }
+
+  &__mission-title {
+    font-size: 36px;
+    @extend %dm-700;
+    color: #243f4d;
+    margin-bottom: 50px;
+  }
+
+  &__mission-text {
+    @extend %rubik-400;
+    color: #243f4d;
+    padding-bottom: 65px;
+    border-bottom: 2px solid #e0e0e0;
+    margin-bottom: 25px;
+  }
+
+  &__mission-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__mission-p {
+    font-size: 36px;
+    @extend %dm-700;
+    color: #243f4d;
+    margin-bottom: 10px;
+  }
+
+  &__mission-item {
+    display: flex;
+    // padding: 25px 0;
+    max-width: 200px;
+    width: 100%;
+    padding: 0 25px;
+  }
+
+  &__mission-item_2 {
+    border-left: 2px solid #e6eaf0;
+    border-right: 2px solid #e6eaf0;
+  }
+
+  &__mission__img {
+    margin-right: 20px;
+  }
+
+  &__mission-item-span {
+    font-size: 16px;
+    color: #4c4c4c;
+    @extend %dm-700;
+  }
+
+  &__info {
+    background-color: #fcd7b6;
+    padding: 90px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+  }
+
+  &__info-item {
+    max-width: 250px;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__info-img {
+    width: 65px;
+    margin: 0 auto 20px;
+  }
+
+  &__info-img__box {
+    position: relative;
+  }
+
+  &__info-img__box::after {
+    content: '';
+    background-color: rgb(163, 187, 200);
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    position: absolute;
+    right: -13px;
+    bottom: 13px;
+    opacity: .6;
+  }
+
+  &__info-title,
+  &__info-descr {
+    color: #243f4d;
+    font-size: 36px;
+    @extend %dm-700;
+    margin-bottom: 20px;
+  }
+
+  &__info-descr {
+    font-size: 18px;
+  }
+
+}

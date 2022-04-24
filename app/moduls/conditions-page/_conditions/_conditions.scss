@@ -1,0 +1,42 @@
+.condidtions {
+  padding: 115px 0 0 0;
+
+  &__title {
+    font-size: 24px;
+    color: rgb(36, 63, 77);
+    @extend %rubik-500;
+    margin-bottom: 25px;
+  }
+
+  &__list {
+    margin-bottom: 60px;
+    list-style: none;
+    counter-reset: my-numbers 0;
+  }
+
+  &__item {
+    position: relative;
+    padding-left: 30px;
+  }
+
+  &__item::before {
+    content: '0' counter(my-numbers) '.';
+    position: absolute;
+    counter-increment: my-numbers;
+    left: 0;
+    top: 0;
+    padding-right: 5px;
+  }
+
+  &__item,
+  &__text {
+    font-size: 16px;
+    color: rgb(36, 63, 77);
+    margin-bottom: 25px;
+    @extend %rubik-400;
+  }
+
+  &__text {
+    margin-bottom: 60px;
+  }
+}

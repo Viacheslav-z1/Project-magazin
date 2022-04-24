@@ -1,0 +1,115 @@
+.our-page {
+  padding-bottom: 70px;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__content {
+    max-width: 305px;
+  }
+
+  &__title {
+    color: #243f4d;
+    font-size: 36px;
+    @extend %dm-700;
+    margin-bottom: 30px;
+  }
+
+  &__text {
+    color: #243f4d;
+    @extend %dm-500;
+    margin-bottom: 70px;
+  }
+
+  &__btn {
+    padding: 15px 65px 15px 20px;
+    background-color: #a3bbc8;
+    color: #fff;
+    font-size: 15px;
+    @extend %dm-500;
+    border-radius: 5px;
+    position: relative;
+  }
+
+  &__btn::after {
+    content: '';
+    width: 15px;
+    height: 11px;
+    background-image: url('../images/nav_user_icons/white_right-arrow.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all .5s;
+  }
+
+  &__btn:hover::after {
+    right: 4px;
+  }
+
+  &__team {
+    max-width: 780px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 100px 30px;
+  }
+
+  &__img {
+    max-width: 370px;
+    height: 320px;
+    width: 100%;
+  }
+
+  &__item {
+    position: relative;
+  }
+
+  &__item-info {
+    width: 325px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 6px 57px 0px rgba(37, 37, 37, 0.05);
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+    align-items: center;
+    position: absolute;
+    bottom: -55px;
+    left: 0;
+  }
+
+  &__item-soc {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__item-link {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #f6f6f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3px;
+    transition: all .5s;
+  }
+
+  &__item-link:hover {
+    background-color: #9194e7;
+  }
+
+  &__item-name {
+    @extend %dm-700;
+    color: #436372;
+    margin-bottom: 15px;
+  }
+
+  &__item-descr {
+    color: #565872;
+  }
+}

@@ -1,0 +1,68 @@
+.tovars {
+
+  &__inner {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  &__item {
+    max-width: 870px;
+    width: 100%;
+    padding: 100px 150px 100px 50px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+  }
+
+  &__info {
+    max-width: 315px;
+    margin-left: auto;
+    position: relative;
+  }
+
+  &__title {
+    color: #243f4d;
+    font-size: 26px;
+    line-height: 32px;
+    margin-bottom: 15px;
+  }
+
+  &__descr {
+    @extend %rubik-400;
+  }
+
+  &__btn {
+    margin-top: 25px;
+    display: inline-block;
+    padding: 20px 80px 20px 15px;
+    border: 1px solid #243f4d;
+    border-radius: 5px;
+    @extend %rubik-500;
+    color: #436372;
+    position: relative;
+  }
+
+  &__btn::after {
+    content: '';
+    background-image: url('../images/arrow-right.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 23px;
+    height: 9px;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all .5s;
+  }
+
+  &__btn:hover::after {
+    right: 3px;
+  }
+}

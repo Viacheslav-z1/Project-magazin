@@ -13,6 +13,9 @@
   &__list {
     display: flex;
   }
+  &__btn{
+    display: none;
+  }
 
   &__item {
     border-bottom: 1px solid transparent;
@@ -103,5 +106,139 @@
 
   &__button {
     background-color: #a3bbc8;
+  }
+}
+
+@media(max-width: 1010px){
+
+  .menu{
+    order: 1;
+    &__list{
+      flex-direction: column;
+    }
+    .menu__item+.menu__item {
+      margin-left: 0px;
+    }
+    &__item{
+      width: 100%;
+      text-align: center;
+      display: block;
+      padding: 20px;
+      
+    }
+    &__list{
+      position: absolute;
+      padding: 150px 10px 10px;
+      left: 0;
+      right: 0;
+      top: 0px;
+      width: 100%;
+      background-color: hsl(200, 61%, 30%, .7);
+      height: 100%;
+      z-index: 10;
+      overflow: auto;
+      transition: all .5s;
+      transform: translateY(-200%);
+      &.menu__list--active{
+        transform: translateY(0);
+        transition: all .5s;
+      }
+    }
+    &__link{
+      width: 100%;
+      display: block;
+      color: #fff;
+      font-size: 20px;
+    }
+    &__btn{
+      display: block;
+      margin-left: 20px;
+      z-index: 11;
+      width: 31px;
+      height: 20px;
+      background-color: transparent;
+      border: none;
+      padding: 0;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      span{
+      height: 3px;
+      width: 100%;
+      background-color: #000;
+      }
+      &::after,
+      &::before{
+        content: '';
+        position: absolute;
+        height: 3px;
+        width: 100%;
+        background-color: #000;
+        transition: all .5s;
+      }
+      &::after{
+        top: 0;
+      }
+      &::before{
+        bottom: 0;
+      }
+      transition: all .5s;
+      &.menu__btn--active{
+        span{
+          transition: all .5s;
+          opacity: 0;
+        }
+        &::before {
+          transform: rotate(45deg);
+          bottom: 8px;
+          background-color: #b51111;
+        }
+        &::after {
+          transform: rotate(-45deg);
+          background-color: #b51111;
+          top: 10px;
+        }
+      }
+    }
+    
+  }
+  .user-nav {
+    margin-left: auto;
+    &__info{
+      margin: 0 10px;
+    }
+    &__basket {
+      padding: 10px 35px 10px 15px;
+    }
+    &__likes {
+      padding: 10px 15px 10px 35px;
+    }
+    &__seach,
+    &__button{
+      width: 45px;
+      height: 45px;
+    }
+    &__basket__num{
+      right: 20px;
+    }
+  }
+}
+
+@media(max-width: 520px) {
+  .header{
+  padding: 25px 0;
+    &__inner{
+      flex-wrap: wrap;
+    }
+  }
+  .user-nav{
+    width: 100%;
+    margin-top: 20px;
+    margin-left: auto;
+    justify-content: center;
+  }
+  .menu {
+    order: 0;
   }
 }

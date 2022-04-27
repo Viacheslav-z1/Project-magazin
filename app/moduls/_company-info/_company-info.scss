@@ -71,3 +71,24 @@
   }
 
 }
+
+@media(max-width:968px){
+
+  .company-info {
+
+    &__inner{
+      display: block;
+    }
+    &__item{
+      display: block;
+      max-width: 100%;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    &__img-box{
+     margin: 10px auto;
+    }
+  }
+
+}
+

@@ -121,3 +121,43 @@
     color: #222933;
   }
 }
+
+
+@media(max-width: 968px){
+  .our{
+    &__inner{
+      flex-direction: column;
+      align-items: center;
+    }
+    &__item{
+      margin-bottom: 20px;
+    }
+
+  }
+}
+
+@media(max-width: 600px) {
+  .our{
+
+    &__top{
+      display: block;
+      text-align: center;
+    }
+    &-title{
+      margin-bottom: 20px;
+    }
+  }
+
+}
+
+@media(max-width: 375px) {
+  .our{
+    &__info{
+      flex-direction: column;
+      align-items: center;
+    }
+    &__data{
+      margin-right: 0;
+    }
+  }
+}

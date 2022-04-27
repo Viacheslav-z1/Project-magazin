@@ -110,6 +110,9 @@
 }
 
 @media(max-width: 1010px){
+  body.lock{
+    overflow: hidden;
+  }
 
   .menu{
     order: 1;

@@ -16,3 +16,15 @@
 
   &__item {}
 }
+
+@media(max-width:968px){
+  .partners{
+    padding: 50px 0;
+  .partners__list{
+      flex-wrap: wrap;
+    }
+    &__item{
+      margin: 30px;
+    }
+  }
+}

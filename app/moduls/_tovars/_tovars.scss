@@ -66,3 +66,40 @@
     right: 3px;
   }
 }
+
+@media(max-width:1600px){
+  .tovars {
+    &__item{
+    padding: 100px 15px 100px 50px;
+    }
+  }
+}
+@media(max-width:1200px) {
+  .tovars {
+    &__inner{
+      display: block;
+    }
+    &__item {
+      margin: 0 auto 30px;
+    }
+  }
+}
+
+@media(max-width:500px) {
+  .tovars {
+    &__inner {
+      display: block;
+    }
+  
+    &__item {
+      background-image: none !important;
+      background-color: #feefe2;
+      padding: 30px;
+      min-height: auto;
+    }
+    &__title{
+      font-size: 24px;
+      line-height: 30px;
+    }
+  }
+}

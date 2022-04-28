@@ -67,7 +67,8 @@ a{
   display: flex;
   justify-content: center;
   align-items: center;
-  
+  overflow-x: auto;
+  padding-bottom: 15px;
   &__list{
     display: flex;
 
@@ -372,6 +373,17 @@ a{
   }
 }
 
+.product-1--list{
+  padding: 16px 50px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #a3bbc8;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 30px;
+  display: inline-block;
+}
+
 
 .filter {
   margin-bottom: 75px;
@@ -599,4 +611,35 @@ a{
   .title{
     font-size: 32px;
   }
+  .comments{
+    &__img-box{
+      display: none;
+    }
+    &__box{
+      flex-wrap: wrap;
+    }
+    &__box,
+    &__text{
+      margin-bottom: 10px;
+    }
+    &__input-box{
+      flex-direction: column;
+    }
+    &__leave-name{
+      margin-right: 0;
+    }
+    &__leave-name,
+    &__leave-name__box,
+    &__leave-mail,
+    &__leave-mail__box{
+      max-width: 100%;
+    }
+    &__item{
+      padding: 15px 0;
+      &:last-child{
+        margin-bottom: 30px;
+      }
+    }
+  }
 }
+

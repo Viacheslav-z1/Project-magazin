@@ -1,5 +1,14 @@
 $(function () {
 
+  $('.button-filter').on('click', function (event) {
+    $('.product-1__filters').slideToggle();
+    event.preventDefault();
+    var id = $('.button-filter').attr('href'),
+    top = $(id).offset().top;
+    $('body,html').animate({ scrollTop: top }, 1500);
+
+  })
+
   $('.menu__btn').on('click', function () {
     $('.menu__list').toggleClass('menu__list--active');
     $('.menu__btn').toggleClass('menu__btn--active');
@@ -44,6 +53,30 @@ $(function () {
     slidesToScroll: 4,
     prevArrow: '<button type="button" class="slick-prev"><img src="../images/product-cart/icon/arrow-left.svg" alt=""></button>',
     nextArrow: '<button type="button" class="slick-next"><img src="../images/product-cart/icon/arrow-right.svg" alt=""></button>',
+    responsive : [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+        }
+      },
+      {
+        breakpoint: 820,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        }
+      },
+
+      {
+        breakpoint: 631,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      },
+    ]
   });
 
   $('.product-cart__input').styler();

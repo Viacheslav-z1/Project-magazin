@@ -139,3 +139,47 @@
   }
 
 }
+
+@media(max-width:1200px){
+  .about {
+    &__mission-img {
+      display: none;
+    }
+  }
+}
+
+@media(max-width:968px) {
+ .about{
+   &__info{
+     padding: 50px 0;
+     flex-wrap: wrap;
+   }
+   &__info-item{
+    margin: 0 auto 30px;
+    padding: 0 5px;
+   }
+ }
+}
+@media(max-width:650px) {
+  .about {
+    padding: 50px 0;
+    &__mission-title{
+      margin-bottom: 20px;
+    }
+    &__mission-text{
+      padding-bottom: 20px;
+    }
+    &__mission-item_2{
+      border: none;
+    }
+    &__mission-box{
+     flex-wrap: wrap;
+    }
+    &__mission-item{
+      margin: 0 auto 30px;
+    }
+    &__mission{
+      padding-bottom: 20px;
+    }
+}
+}

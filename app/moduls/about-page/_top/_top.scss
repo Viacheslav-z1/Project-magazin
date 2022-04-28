@@ -8,7 +8,9 @@
   &__title {
     color: #222933;
     font-size: 36px;
+    line-height: 40px;
     @extend %rubik-400;
     margin-bottom: 20px;
+    text-align: center;
   }
 }

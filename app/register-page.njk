@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register</title>
+  <link rel="stylesheet" href="css/login-page.min.css">
+</head>
+
+<body>
+
+  {% include 'app/moduls/_header/_header.html' %}
+
+  <main class="main">
+    
+    <section class="top">
+  <h2 class="top__title">
+    Register
+  </h2> 
+  <div class="breadcrumbs">
+    <ul class="breadcrumbs__list">
+      <li class="breadcrumbs__item">
+        <a class="breadcrumbs__link" href="../../../index.html">
+          Home
+        </a>
+      </li>
+      <li class="breadcrumbs__item">
+        <a class="breadcrumbs__link" href="#">
+          Register
+        </a> 
+      </li>
+    </ul>
+  </div>
+</section>
+
+    <section class="login">
+  <div class="login__inner">
+    <form class="login__form">
+      <label class="login__label">
+        Username or email address *
+        <input class="login__email" type="text" required>
+      </label>
+      <label class="login__label">
+        Password * 
+        <input class="login__password" type="password" required>
+      </label>
+      <button class="login__btn" type="submit"> 
+        Register
+      </button>
+      <div class="login__info">
+      </div>
+    </form>
+  </div>
+</section>
+    
+    {% include 'app/moduls/_partners/_partners.html' %}
+
+  </main>
+
+  {% include 'app/moduls/_footer/_footer.html' %}
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

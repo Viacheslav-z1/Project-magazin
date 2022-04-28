@@ -95,15 +95,6 @@ $(function () {
     },
   });
 
-  // $('.product-2__add-to-cart').on('click',function () {
-  //   $('.product-2__added-to_cart').toggleClass('active');
-  //   $('.product-2__add-to-cart').toggleClass('active');
-  // });
-
-  // $('.product-2__cart-btn', this).on('click', function () {
-  //   $('.product-2__added-to_cart').removeClass('active');
-  //   $('.product-2__add-to-cart').removeClass('active');
-  // });
 
   $(this).find('.product-2__add-to-cart').on('click', function () {
     $('.product-2__added-to_cart').toggleClass('active');
